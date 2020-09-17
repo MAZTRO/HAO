@@ -1,0 +1,156 @@
+footer {
+    width: 100%;
+
+    position: relative;
+    bottom: 0;
+
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+
+    background-color: #003342;
+    color: #EEE;
+
+    display: flex;
+}
+
+footer .container {
+    width: 80%;
+    height: 100%;
+
+    margin: auto;
+
+    padding: 5em;
+    margin: auto;
+}
+
+/* INFO:
+- Our descriotion
+- Contacts
+- Menu */
+
+footer .container .info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: 1fr;
+
+    padding-bottom: 50px;
+    border-bottom: 1px solid #0d7070;
+}
+
+footer .container .info .ourself {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    width: 80%;
+    margin: auto 10px;
+
+    font-size: 0.85em;
+}
+
+footer .container .info .contact {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    width: 80%;
+    margin: auto 10px;
+
+    font-size: 0.85em;
+}
+
+footer .container .info .contact .data {
+    height: 25px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+footer .container .info .contact .data span {
+    width: 20px;
+    height: 20px;
+
+    margin: auto 10px;
+}
+
+footer .container .info .contact .data p {
+    font-size: 0.9em;
+    margin: auto 10px;
+}
+
+footer .container .info .contact .data a {
+    font-size: 0.9em;
+    margin: auto 10px;
+
+    color: #EEE;
+    text-decoration: none;
+}
+
+footer .container .info .contact .data span svg {
+    width: 20px;
+    height: 20px;
+}
+
+footer .container .info .menu {
+    margin: auto;
+}
+
+footer .container .info .menu ul {
+    list-style: none;
+}
+
+footer .container .info .menu ul li {
+    margin: 5px auto;
+}
+footer .container .info .menu ul li:hover {
+    cursor: pointer;
+}
+
+
+/* Social:
+- Links to social media
+- Copyright phrase */
+
+footer .container .social {
+    display: flex;
+
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+footer .container .social .networks {
+    width: 30%;
+    height: 30px;
+
+    margin: auto;
+}
+
+footer .container .social .networks span {
+    width: 20px;
+    height: 20px;
+
+    margin: 5px auto;
+}
+
+footer .container .social .networks span svg {
+    width: 20px;
+    height: 20px;
+
+    margin: auto 10px;
+}
+
+footer .container .social p {
+    width: 60%;
+    height: 30px;
+
+    margin: auto;
+}
+
+footer .container .social p a {
+    text-decoration: none;
+    color: #E34AC5;
+}
+
+footer .container .social p a:hover {
+    text-decoration: none;
+    color: #14CBD9;
+}
