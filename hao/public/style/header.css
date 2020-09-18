@@ -1,0 +1,81 @@
+body header {
+    width: 100%;
+    height: 80px;
+
+    background: linear-gradient(90deg, rgb(26, 123, 153) 0%, rgba(0,51,65,1) 74%);
+
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+    color: #EEE;
+}
+
+body header .container {
+    width: 80%;
+    height: 100%;
+
+    margin: auto;
+
+    display: flex;
+}
+
+body header .container .logo {
+    position: relative;
+    left: 0;
+
+    margin: auto 10px;
+}
+
+body header .container .logo a img {
+    width: 35px;
+}
+
+body header .container .menu {
+    position: relative;
+    right: 0;
+
+    margin: auto 10px auto auto;
+
+    width: auto;
+    height: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body header .container .menu a {
+    padding: 0 1.2em;
+    color: #FFF;
+    text-decoration: none;
+
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body header .container .menu a:hover {
+    color: #E34AC5;
+}
+
+body header .container .menu .Tickets {
+    height: 40px;
+
+    border: 2px solid #FFF;
+    border-radius: 50px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0 1.9em;
+    color: #FFF;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body header .container .menu .Tickets:hover {
+    transform: scale(.98);
+    color: #FFF;
+    background-color: rgba(255, 255, 255, 0.05);
+}
