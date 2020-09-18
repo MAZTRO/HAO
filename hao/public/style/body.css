@@ -59,6 +59,11 @@ body .banner .container .speaker {
     height: 100%;
 
     background-color: #FFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
 }
 
 body .banner .container .speaker h1 {
@@ -70,9 +75,11 @@ body .banner .container .speaker h1 {
 }
 
 body .banner .container .speaker h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #555;
     font-weight: 500;
+
+    margin: 10px auto;
 }
 
 body .banner .container .speaker .calendar {
@@ -115,7 +122,7 @@ body .banner .container .speaker .calendar span svg {
 }
 
 body .banner .container .speaker .calendar p {
-    font-size: 0.9em;
+    font-size: 0.95em;
     margin: auto;
     margin-left: 0;
 }
@@ -142,13 +149,236 @@ body .banner .container .speaker .Tickets:hover {
     transform: scale(0.98);
 }
 
-/* ============ */
+/* ============== */
+/* Features style */
+/* ============== */
+
+body .Features {
+    width: 100%;
+    height: 700px;
+
+    background-color: white;
+    display: flex;
+}
+
+body .Features .container {
+    width: 80%;
+    height: 100%;
+
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body .Features .container .why {
+    width: 30%;
+    height: 80%;
+
+    margin: auto;
+}
+
+body .Features .container .why h2 {
+    width: 80%;
+    font-size: 4em;
+    font-weight: 900;
+
+    color: #003341;
+
+}
+
+body .Features .container .why p {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+body .Features .container .video {
+    width: 60%;
+    height: 80%;
+
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .Features .container .video iframe {
+    width: 80%;
+    height: 400px;
+}
+
+/* =============== */
 /* Streaming style */
-/* ============ */
+/* =============== */
 
 body .streaming {
     width: 100%;
     height: 700px;
 
-    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FFF;
+    color: #555;
+}
+
+body .streaming .container {
+    width: 80%;
+    height: 80%;
+
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #999;
+}
+
+body .streaming .container .enlace {
+    width: 40%;
+    height: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-flow: column;
+
+    margin: auto;
+}
+
+body .streaming .container .enlace a {
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+}
+body .streaming .container .enlace a:hover {
+    transform: scale(0.96);
+}
+
+body .streaming .container .enlace a h2 {
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
+    color: #9c2c86;
+
+    background-color: rgba(247, 0, 255, 0.1);
+    padding: 0.3em 1.2em;
+    border-radius: 50px;
+    border: 2px solid #E34AC5;
+}
+
+body .streaming .container .enlace p {
+    font-size: 1em;
+}
+
+body .streaming .container .enlace #countdown {
+    font-size: 1.5em;
+    color: #E34AC5;
+    font-weight: 900;
+}
+
+body .streaming .container .preview {
+    width: 60%;
+    height: 70%;
+
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .streaming .container .preview .cel {
+    width: 90%;
+    height: 450px;
+
+    background-image: url('../images/Lusa\ su\ PC.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    margin: auto;
+}
+
+/* =============== */
+/* Game style */
+/* =============== */
+
+body .game {
+    width: 100%;
+    height: 700px;
+
+    background-color: #FFF;
+
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 50px;
+}
+
+body .game .container {
+    width: 80%;
+    height: 80%;
+
+    margin: auto;
+    display: flex;
+}
+
+body .game .container .mySlides {
+    width: 80%;
+    height: 100%;
+    display: none;
+
+    margin: auto;
+}
+
+body .game .container .mySlides img {
+    width: 100%;
+    height: 100%;
+
+    margin: auto;
+
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px #555;
+}
+
+body .game .dots {
+    position: relative;
+    margin: 5px;
+}
+
+body .game .dots .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #003341;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.15s ease;
+}
+
+body .game .dot:hover {
+    background-color: #E34AC5;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }

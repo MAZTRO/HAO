@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/body.css">
 
+    <script src="./scripts/slides.js" async></script>
+    <script src="./scripts/time.js"></script>
+
   </head>
 
   <body>
@@ -43,7 +46,7 @@
         </div>
         <div class="speaker">
           <h1>Hardware All in One</h1>
-          <h2>Nuevas tecnologias para el fururo de los graficos por computador</h2>
+          <h2>Nuevas tecnologias para el fururo de los graficos por computador con Lisa Su CEO de AMD</h2>
           <h2>Streaming, gaming, VR/AR y mucho mas...</h2>
           <div class="calendar">
             <div class="date">
@@ -243,7 +246,56 @@
       </div>
     </div>
 
-    <div class="streaming"></div>
+    <div class="Features">
+      <div class="container">
+        <div class="why">
+          <h2>¿Porque asistir?</h2>
+          <p>
+            Tendras toda la informacion de primera mano de Lisa Su con respecto a las arquitecturas de las nuevas tarjetas de video, tanto las integradas en los procesadores como en las tarjetas independientes. <br><br>
+            Tambien encontraras todo los desarrollos en las tecnologias de procesamiento de imagen con las nuevas BIG NAVI con arquitectura RDNA 2 y como esto impactara el mercado con la reciente salida de las nuevas tecnologias de Nvidia con las RTX serie 3000 con su arquitectura en 8nm de samsung.
+          </p>
+        </div>
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/A1NNhjQqIcU" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="streaming">
+      <div class="container">
+        <div class="preview">
+          <div class="cel"></div>
+        </div>
+        <div class="enlace">
+          <a href="#"><h2>Ingresa aqui!!</h2></a>
+          <p>No te pierdas ni un solo momento del evento.</p>
+          <p>El evento comienza en:</p>
+          <span id="countdown"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="game">
+      <div class="container">
+        <div class="mySlides fade">
+          <img src="https://oecdenvironmentfocusblog.files.wordpress.com/2020/06/wed-blog-shutterstock_1703194387_low_nwm.jpg">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Shaqi_jrvej.jpg">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="https://post.greatist.com/wp-content/uploads/sites/3/2020/02/325466_1100-1100x628.jpg">
+        </div>
+      </div>
+
+      <div class="dots" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
 
     <div id="content"></div>
 
