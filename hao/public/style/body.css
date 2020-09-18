@@ -143,6 +143,8 @@ body .banner .container .speaker .Tickets {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: 0.15s;
 }
 body .banner .container .speaker .Tickets:hover {
     background-color: rgba(247, 0, 255, 0.051);
@@ -181,15 +183,17 @@ body .Features .container .why {
 
 body .Features .container .why h2 {
     width: 80%;
-    font-size: 4em;
+    font-size: 3.2em;
     font-weight: 900;
+
+    margin: 50px auto 10px 0;
 
     color: #003341;
 
 }
 
 body .Features .container .why p {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 500;
 }
 
@@ -201,11 +205,16 @@ body .Features .container .video {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    border-radius: 50px;
+    box-shadow: 5px 5px 20px #D9D9D9;
 }
 
 body .Features .container .video iframe {
-    width: 80%;
-    height: 400px;
+    width: 95%;
+    height: 92%;
+
+    border-radius: 30px;
 }
 
 /* =============== */
@@ -234,7 +243,7 @@ body .streaming .container {
     align-items: center;
 
     border-radius: 20px;
-    box-shadow: 5px 5px 15px #999;
+    box-shadow: 5px 5px 15px #D9D9D9;
 }
 
 body .streaming .container .enlace {
@@ -255,6 +264,7 @@ body .streaming .container .enlace a {
     padding: 0;
 
     text-decoration: none;
+    transition: 0.15s;
 }
 body .streaming .container .enlace a:hover {
     transform: scale(0.96);
@@ -310,59 +320,91 @@ body .streaming .container .preview .cel {
 
 body .game {
     width: 100%;
-    height: 700px;
+    height: 800px;
 
     background-color: #FFF;
 
     display: flex;
     flex-flow: column;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 body .game .container {
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
 
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
+
+    background: linear-gradient(30deg, #117880 0%, #003341 95%);
+    border-radius: 50px;
+    box-shadow: 5px 5px 20px #999;
+}
+
+body .game .container .title {
+    width: 100%;
+
+    margin: 20px auto 20px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .game .container .title h2 {
+    font-size: 3em;
+    color: #FFF;
+    font-weight: 900;
+
+    margin: auto 20px;
+}
+
+body .game .container .title a {
+    text-decoration: none;
+}
+
+body .game .container .title a button {
+    padding: 0.5em 1.2em;
+    margin: auto 10px;
+
+    border: 2px solid #FFF;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.051);
+    outline: none;
+
+    font-size: 1.5em;
+    color: #FFF;
+
+    transition: 0.1s;
+}
+body .game .container .title button:hover {
+    transform: scale(0.95);
+
+    cursor: pointer;
 }
 
 body .game .container .mySlides {
     width: 80%;
-    height: 100%;
+    height: 70%;
     display: none;
 
-    margin: auto;
+    margin: 10px auto;
 }
 
 body .game .container .mySlides img {
-    width: 100%;
+    min-width: 350px;
     height: 100%;
 
     margin: auto;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     border-radius: 20px;
-    box-shadow: 5px 5px 20px #555;
-}
-
-body .game .dots {
-    position: relative;
-    margin: 5px;
-}
-
-body .game .dots .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #003341;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.15s ease;
-}
-
-body .game .dot:hover {
-    background-color: #E34AC5;
+    box-shadow: 5px 5px 20px #14CBD9;
+    border: 1px solid #14CBD9;
 }
 
 /* Fading animation */

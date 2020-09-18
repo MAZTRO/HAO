@@ -21,9 +21,9 @@ function showRemaining() {
     var minutes = Math.floor((distance % _hour) / _minute);
     var seconds = Math.floor((distance % _minute) / _second);
 
-    document.getElementById('countdown').innerHTML = days + ' D, ';
-    document.getElementById('countdown').innerHTML += hours + ' H, ';
-    document.getElementById('countdown').innerHTML += minutes + ' Min';
+    let clock = document.getElementById('countdown');
+
+    clock.innerHTML = `${days} dias, ${hours} horas y ${minutes} minutos!!`;
 }
 
 timer = setInterval(showRemaining, 1000);

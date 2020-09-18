@@ -22,6 +22,35 @@
   </head>
 
   <body>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v8.0'
+        });
+      };
+
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+      attribution=setup_tool
+      page_id="108010374388148"
+      theme_color="#44bec7"
+      logged_in_greeting="Hola, en que puedo ayudarte?"
+      logged_out_greeting="Hola, en que puedo ayudarte?">
+    </div>
+
     <header>
       <div class="container">
         <div class="logo">
@@ -30,7 +59,7 @@
           </a>
         </div>
         <div id="menu" class="menu">
-          <a href="https://ozelproducciones.com/quienes-somos/" target="_blank">Quiénes somos</a>
+          <a class="logInBtn" href="#">Login</a>
           <a class="Tickets" href="#">Entradas</a>
         </div>
       </div>
@@ -277,23 +306,22 @@
 
     <div class="game">
       <div class="container">
-        <div class="mySlides fade">
-          <img src="https://oecdenvironmentfocusblog.files.wordpress.com/2020/06/wed-blog-shutterstock_1703194387_low_nwm.jpg">
+        <div class="title">
+          <h2>Curiosidades!</h2>
+          <a href="https://kahoot.com/academy/study/?filter=computer-science&language=english" target="_blank"><button class="gameBtn">Juega aqui!</button></a>
         </div>
 
         <div class="mySlides fade">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Shaqi_jrvej.jpg">
+          <img src="./images/Trivia-1.png">
         </div>
 
         <div class="mySlides fade">
-          <img src="https://post.greatist.com/wp-content/uploads/sites/3/2020/02/325466_1100-1100x628.jpg">
+          <img src="./images/Trivia-2.png">
         </div>
-      </div>
 
-      <div class="dots" style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+        <div class="mySlides fade">
+          <img src="./images/Trivia-3.png">
+        </div>
       </div>
     </div>
 
