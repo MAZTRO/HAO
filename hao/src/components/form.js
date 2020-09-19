@@ -29,8 +29,6 @@ class FormInput extends React.Component {
         let basicTextVerification = /^[A-Za-z\s]+$/;
         let simpleText = basicTextVerification.test(val);
 
-        console.log(this.state.form);
-
         if (!simpleText && (key === 'Nombres' || key === 'Apellidos' || key === 'Profesion')) {
             console.log(`Deleting: ${key}`);
             delete this.state.form[key];
@@ -128,12 +126,14 @@ class FormInput extends React.Component {
                         type="submit"
                         state={this.state}
                         inState=""
+                        onClick={this.props.onClick}
                         />
                     : <GeneralBtn
                         name="Enviar"
                         type="submit"
                         state={this.state}
                         inState="disabled"
+                        onClick={this.props.onClick}
                         />
                 }
             </div>

@@ -6,9 +6,8 @@ class GeneralBtn extends React.Component {
     state = {}
 
     handleSubmit = ev => {
-        ev.preventDefault();
+        console.log(this.props.onClick);
 
-        console.log(this.props.state);
         this.setState(this.props.state.form);
         console.log(this.state);
     }

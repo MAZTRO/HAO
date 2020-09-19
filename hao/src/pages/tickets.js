@@ -48,7 +48,9 @@ export default function Tickets() {
                 onClose={handleClose}
             >
                 <div className="PopUp">
-                    <FormInput />
+                    <FormInput
+                        onClick={handleClose}
+                    />
                 </div>
             </Modal>
         </div>
