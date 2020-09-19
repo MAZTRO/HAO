@@ -1,7 +1,10 @@
 import React from 'react';
 
 class InputFueld extends React.Component {
-    state = {}
+    constructor () {
+        super()
+        this.state = {}
+    }
 
     render() {
         const { onChange, onClick } = this.props

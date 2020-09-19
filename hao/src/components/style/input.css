@@ -1,4 +1,4 @@
-body .modal .PopUp {
+body .PopUp {
     width: 60%;
     height: 90%;
     background-color: #FFF;
@@ -12,11 +12,11 @@ body .modal .PopUp {
     outline: none;
 }
 
-body .modal .PopUp::-webkit-scrollbar {
+body .PopUp::-webkit-scrollbar {
     display: none;
 }
 
-.formulario {
+.PopUp .formulario {
     width: 60%;
     height: 70%;
 
@@ -24,7 +24,7 @@ body .modal .PopUp::-webkit-scrollbar {
     margin-top: 50px;
 }
 
-.formulario h2 {
+.PopUp .formulario h2 {
     font-size: 50px;
     color: #003341;
     font-weight: 500;
@@ -96,8 +96,8 @@ form .inData.in {
     height: 20px;
 
     position: relative;
-    top: -25px;
-    left: 40px;
+    top: -26px;
+    left: 30px;
 }
 .acepto a {
     text-decoration: none;

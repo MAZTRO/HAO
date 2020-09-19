@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import Modal from '@material-ui/core/Modal';
 import FormInput from '../components/form';
 
@@ -33,13 +32,7 @@ export default function Tickets() {
 
     return (
         <div>
-            <Button
-                variant="contained"
-                color="primary"
-                onClick={handleOpen}
-            >
-                Open Modal
-            </Button>
+            <button className="Tickets" onClick={handleOpen}>Entradas</button>
 
             <Modal
                 className={classes.modal}

@@ -1,15 +1,36 @@
 import React from 'react';
-import './style/input.css';
 
 class GeneralBtn extends React.Component {
+    constructor () {
+        super()
+        this.state = {}
+    }
 
-    state = {}
+    handleSubmit = async ev => {
+        let data = this.props.state.form;
 
-    handleSubmit = ev => {
-        console.log(this.props.onClick);
+        try {
+            let conf = {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content.Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            }
 
-        this.setState(this.props.state.form);
-        console.log(this.state);
+            console.log('----> Sending DATA to API...');
+
+            let res = await fetch('http://localhost:5000/api/tickets', conf);
+            let json = await res.json();
+
+            /* Response of the API */
+            console.log(json);
+        } catch (error) {
+            console.log('---------------');
+            console.log(error);
+            console.log('---------------');
+        }
     }
 
     render() {

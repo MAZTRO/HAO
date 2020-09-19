@@ -127,6 +127,10 @@ body .banner .container .speaker .calendar p {
     margin-left: 0;
 }
 
+body .banner .container .speaker #ticketsBanner {
+    width: 100%;
+}
+
 body .banner .container .speaker .Tickets {
     height: 40px;
     width: 60%;
@@ -134,6 +138,7 @@ body .banner .container .speaker .Tickets {
 
     border: 2px solid #E34AC5;
     border-radius: 50px;
+    outline: none;
 
     background-color: rgba(247, 0, 255, 0.1);
     color: #E34AC5;
@@ -149,6 +154,7 @@ body .banner .container .speaker .Tickets {
 body .banner .container .speaker .Tickets:hover {
     background-color: rgba(247, 0, 255, 0.051);
     transform: scale(0.98);
+    cursor: pointer;
 }
 
 /* ============== */

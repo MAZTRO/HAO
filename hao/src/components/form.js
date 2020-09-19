@@ -29,7 +29,10 @@ class FormInput extends React.Component {
         let basicTextVerification = /^[A-Za-z\s]+$/;
         let simpleText = basicTextVerification.test(val);
 
-        if (!simpleText && (key === 'Nombres' || key === 'Apellidos' || key === 'Profesion')) {
+        if ((key === 'C.C.' || key === 'Telefono') && val.length < 7) {
+            console.log(`Deleting: ${key}`);
+            delete this.state.form[key];
+        } else if (!simpleText && (key === 'Nombres' || key === 'Apellidos' || key === 'Profesion')) {
             console.log(`Deleting: ${key}`);
             delete this.state.form[key];
         } else if (key === 'Correo' && email) {
@@ -117,7 +120,7 @@ class FormInput extends React.Component {
                     onChange={this.handleChange}
                     onClick={this.handleClick}
                 />
-                <label className="acepto">Acepto las <a href="https://hopin.to/privacy">Politicas de privacidad</a></label>
+                <label className="acepto">Acepto las <a rel="noopener noreferrer" href="https://policies.google.com/privacy?hl=en-CO&fg=1" target="_blank" >Politicas de privacidad</a></label>
 
                 {/* Activate button */}
                 {(Object.keys(inputState).length === 7) && (this.state.form['Privacy'])
