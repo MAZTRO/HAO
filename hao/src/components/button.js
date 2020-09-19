@@ -31,6 +31,9 @@ class GeneralBtn extends React.Component {
             console.log(error);
             console.log('---------------');
         }
+
+        alert('Los datos se han enviado!\nLe llegara su boleta al correo.\nMuchas gracias por participar.');
+        window.location.href='https://hao-ten.vercel.app/';
     }
 
     render() {

@@ -20,7 +20,7 @@ input.btnEnviar:hover {
 }
 
 input.btnEnviar:disabled {
-    transform: scale(1.05);
+    transform: scale(1);
     cursor: default;
     background: linear-gradient(90deg, rgb(202, 202, 202) 0%, rgb(109, 109, 109) 95%);
     border: 1px solid #7e7e7e;

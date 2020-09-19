@@ -104,7 +104,7 @@ class FormInput extends React.Component {
                     type="number"
                     placeHolder="Celular"
                     onChange={this.handleChange}
-                    max="20"
+                    max="10"
                 />
                 <InputFueld
                     title="Profesion"
