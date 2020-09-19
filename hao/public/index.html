@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="./style/body.css">
 
     <script src="./scripts/slides.js" async></script>
-    <script src="./scripts/time.js"></script>
+    <script src="./scripts/time.js" async></script>
+    <script src="./scripts/modal.js"></script>
 
   </head>
 
@@ -59,12 +60,12 @@
           </a>
         </div>
         <div id="menu" class="menu">
-          <a class="logInBtn" href="#">Login</a>
-          <a class="Tickets" href="#">Entradas</a>
+          <button id="Tickets" class="Tickets">Entradas</button>
         </div>
       </div>
     </header>
 
+    <!-- First section: date of event -->
     <div class="banner">
       <div class="container">
         <div class="imagen">
@@ -275,6 +276,7 @@
       </div>
     </div>
 
+    <!-- Second section: Features by Lisa su -->
     <div class="Features">
       <div class="container">
         <div class="why">
@@ -290,6 +292,7 @@
       </div>
     </div>
 
+    <!-- Third section: Countdown of event -->
     <div class="streaming">
       <div class="container">
         <div class="preview">
@@ -304,6 +307,7 @@
       </div>
     </div>
 
+    <!-- Fourth section: A game -->
     <div class="game">
       <div class="container">
         <div class="title">
@@ -325,7 +329,9 @@
       </div>
     </div>
 
-    <div id="content"></div>
+    <!-- Modal box to Login -->
+    <div id="tickets" class="modal">
+    </div>
 
     <footer>
       <div class="container">

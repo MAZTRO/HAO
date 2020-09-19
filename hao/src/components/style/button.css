@@ -1,0 +1,27 @@
+input.btnEnviar {
+    width: 40%;
+    margin: auto;
+
+    font-size: 20px;
+    color: #FFF;
+    padding: 10px 60px;
+    border-radius: 50px;
+
+    background: linear-gradient(90deg, rgb(31, 185, 231) 0%, rgb(4, 94, 119) 95%);
+    border: 1px solid #14CBD9;
+
+    outline: none;
+    transition: 0.2s;
+}
+
+input.btnEnviar:hover {
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+input.btnEnviar:disabled {
+    transform: scale(1.05);
+    cursor: default;
+    background: linear-gradient(90deg, rgb(202, 202, 202) 0%, rgb(109, 109, 109) 95%);
+    border: 1px solid #7e7e7e;
+}

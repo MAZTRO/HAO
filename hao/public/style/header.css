@@ -44,31 +44,19 @@ body header .container .menu {
     align-items: center;
 }
 
-body header .container .menu a {
-    padding: 0 1.2em;
-    color: #FFF;
-    text-decoration: none;
-
-    height: 40px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-body header .container .menu a:hover {
-    color: #E34AC5;
-}
-
 body header .container .menu .Tickets {
     height: 40px;
 
     border: 2px solid #FFF;
     border-radius: 50px;
+    outline: none;
 
     background-color: rgba(255, 255, 255, 0.1);
     padding: 0 1.9em;
     color: #FFF;
     text-decoration: none;
+
+    font-size: 16px;
 
     display: flex;
     justify-content: center;
@@ -78,4 +66,5 @@ body header .container .menu .Tickets:hover {
     transform: scale(.98);
     color: #FFF;
     background-color: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
 }
