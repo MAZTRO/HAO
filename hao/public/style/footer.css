@@ -31,7 +31,7 @@ footer .container {
 footer .container .info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row: 1fr;
+    grid-template-rows: 1fr;
 
     padding-bottom: 50px;
     border-bottom: 1px solid #0d7070;
@@ -41,8 +41,8 @@ footer .container .info .ourself {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 
-    width: 80%;
-    margin: auto 10px;
+    width: 100%;
+    margin: auto;
 
     font-size: 0.85em;
 }
@@ -52,7 +52,7 @@ footer .container .info .contact {
     grid-row: 1 / 2;
 
     width: 80%;
-    margin: auto 10px;
+    margin: auto;
 
     font-size: 0.85em;
 }
@@ -91,6 +91,9 @@ footer .container .info .contact .data span svg {
 }
 
 footer .container .info .menu {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+
     margin: auto;
 }
 
@@ -119,28 +122,28 @@ footer .container .social {
 
 footer .container .social .networks {
     width: 30%;
-    height: 30px;
+    height: 40px;
 
     margin: auto;
+    display: flex;
 }
 
 footer .container .social .networks span {
     width: 20px;
     height: 20px;
 
-    margin: 5px auto;
+    margin: auto;
 }
 
 footer .container .social .networks span svg {
     width: 20px;
     height: 20px;
 
-    margin: auto 10px;
+    margin: 0;
 }
 
 footer .container .social p {
     width: 60%;
-    height: 30px;
 
     margin: auto;
 }

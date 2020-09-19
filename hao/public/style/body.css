@@ -26,6 +26,8 @@ body .banner .container {
 body .banner .container .imagen {
     width: 70%;
     height: 100%;
+
+    margin: auto;
 }
 
 body .banner .container .imagen .Lisa {
@@ -34,9 +36,9 @@ body .banner .container .imagen .Lisa {
     background-image: url('../images/Lisa-Su.jpeg');
     background-repeat: no-repeat;
     background-position: left;
+    background-size: auto;
 
     width: 100%;
-    min-width: 300px;
     height: 100%;
 
     border-top-left-radius: 100px;
@@ -45,11 +47,11 @@ body .banner .container .imagen .Lisa {
 
 body .banner .container .imagen .corte {
     position: absolute;
-    top: 115px;
+    top: 110px;
     right: 25%;
     width: 10%;
 
-    border-bottom: 630px solid #FFF;
+    border-bottom: 640px solid #FFF;
     border-left: 300px solid transparent;
 }
 
@@ -59,6 +61,8 @@ body .banner .container .speaker {
     height: 100%;
 
     background-color: #FFF;
+
+    margin: auto;
 
     display: flex;
     justify-content: center;
@@ -170,7 +174,7 @@ body .Features {
 }
 
 body .Features .container {
-    width: 80%;
+    width: 90%;
     height: 100%;
 
     margin: auto;
@@ -262,7 +266,7 @@ body .streaming .container .enlace {
 
     flex-flow: column;
 
-    margin: auto;
+    margin: auto 5%;
 }
 
 body .streaming .container .enlace a {
@@ -290,26 +294,28 @@ body .streaming .container .enlace a h2 {
 
 body .streaming .container .enlace p {
     font-size: 1em;
+    text-align: center;
 }
 
 body .streaming .container .enlace #countdown {
     font-size: 1.5em;
     color: #E34AC5;
     font-weight: 900;
+    text-align: center;
 }
 
 body .streaming .container .preview {
     width: 60%;
     height: 70%;
 
-    margin: auto;
+    margin: auto 5%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 body .streaming .container .preview .cel {
-    width: 90%;
+    width: 100%;
     height: 450px;
 
     background-image: url('../images/Lusa\ su\ PC.png');
@@ -399,7 +405,6 @@ body .game .container .mySlides {
 }
 
 body .game .container .mySlides img {
-    min-width: 350px;
     height: 100%;
 
     margin: auto;

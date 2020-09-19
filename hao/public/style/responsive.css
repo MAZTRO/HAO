@@ -1,0 +1,371 @@
+@media screen and (max-width: 1410px) {
+
+    /* =============== */
+    /* Game style */
+    /* =============== */
+
+    body .game .container .mySlides img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+
+    /* =============== */
+    /* Banner style */
+    /* =============== */
+
+    body .banner .container .speaker h1 {
+        font-size: 3.5em;
+    }
+
+    body .banner .container .imagen .corte {
+        position: absolute;
+        right: 25%;
+
+        border-left: 150px solid transparent;
+    }
+
+    /* =============== */
+    /* Streaming style */
+    /* =============== */
+
+    body .streaming .container .enlace a h2 {
+        font-size: 1.5em;
+    }
+
+    body .streaming .container .enlace #countdown {
+        font-size: 1.2em;
+    }
+
+
+    /* =============== */
+    /* Game style */
+    /* =============== */
+
+    body .game .container {
+        width: 90%;
+        height: 70%;
+    }
+
+    body .game .container .mySlides img {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+
+@media screen and (max-width: 730px) {
+
+    /* =============== */
+    /* Banner style */
+    /* =============== */
+
+
+    body .banner {
+        height: 900px;
+    }
+
+    body .banner .container {
+        flex-flow: column;
+
+        border-radius: 50px;
+        box-shadow: 5px 5px 20px #D9D9D9;
+    }
+
+    body .banner .container .speaker {
+        width: 80%;
+        height: 50%;
+    }
+
+    body .banner .container .speaker h1 {
+        font-size: 3em;
+    }
+
+    body .banner .container .imagen {
+        width: 80%;
+        height: 40%;
+    }
+
+    body .banner .container .imagen .Lisa {
+        background-size: 130%;
+    }
+
+    body .banner .container .imagen .corte {
+        position: absolute;
+        top: 165px;
+        right: 13%;
+
+        border-bottom: 326px solid #FFF;
+        border-left: 100px solid transparent;
+    }
+
+    /* ============== */
+    /* Features style */
+    /* ============== */
+
+    body .Features .container {
+        flex-flow: column;
+    }
+
+    body .Features .container .why {
+        width: 80%;
+        height: 40%;
+    }
+
+    body .Features .container .video {
+        width: 80%;
+        height: 40%;
+
+        border-radius: 40px;
+    }
+
+    /* =============== */
+    /* Streaming style */
+    /* =============== */
+
+    body .streaming .container {
+        flex-flow: column;
+    }
+
+    body .streaming .container .enlace {
+        width: 70%;
+    }
+
+    body .streaming .container .enlace a h2 {
+        font-size: 1.5em;
+        margin: 0 auto;
+    }
+
+    body .streaming .container .enlace #countdown {
+        font-size: 1.2em;
+    }
+
+    body .streaming .container .preview .cel {
+        height: 250px;
+    }
+
+
+    /* =============== */
+    /* Game style */
+    /* =============== */
+
+    body .game .container {
+        width: 90%;
+        height: 50%;
+    }
+
+    body .game .container .mySlides img {
+        width: 90%;
+        height: 80%;
+    }
+
+    /* =============== */
+    /* Footer style */
+    /* =============== */
+
+    footer .container .info {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    footer .container .info .ourself {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+
+        margin: auto;
+    }
+
+    footer .container .info .contact {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+
+        margin: auto;
+    }
+
+    footer .container .info .menu {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+    /* =============== */
+    /* Banner style */
+    /* =============== */
+
+    body .banner .container .speaker {
+        width: 85%;
+        height: 50%;
+    }
+
+    body .banner .container .speaker h1 {
+        font-size: 2em;
+    }
+
+    body .banner .container .imagen {
+        width: 80%;
+        height: 30%;
+    }
+
+    body .banner .container .imagen .Lisa {
+        background-size: 200%;
+
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+
+    body .banner .container .imagen .corte {
+        position: absolute;
+        top: 165px;
+        right: 13%;
+        width: 5%;
+
+        border-bottom: 326px solid #FFF;
+        border-left: 50px solid transparent;
+    }
+
+    /* ============== */
+    /* Features style */
+    /* ============== */
+
+    body .Features .container .why {
+        width: 80%;
+        height: 40%;
+    }
+
+    body .Features .container .why h2 {
+        font-size: 1.4em;
+    }
+
+    body .Features .container .why p {
+        font-size: 0.85em;
+    }
+
+    body .Features .container .video {
+        width: 90%;
+        height: 30%;
+
+        border-radius: 40px;
+    }
+
+    /* =============== */
+    /* Streaming style */
+    /* =============== */
+
+    body .streaming .container .enlace {
+        width: 80%;
+    }
+
+    body .streaming .container .enlace a h2 {
+        font-size: 1.2em;
+        margin: 0 auto;
+    }
+
+    body .streaming .container .enlace #countdown {
+        font-size: 1.2em;
+    }
+
+    body .streaming .container .preview {
+        width: 90%;
+    }
+
+    body .streaming .container .preview .cel {
+        height: 150px;
+    }
+
+    /* =============== */
+    /* Game style */
+    /* =============== */
+
+    body .game {
+        height: 400px;
+    }
+
+    body .game .container .title {
+        flex-flow: column;
+    }
+
+    body .game .container .title h2 {
+        font-size: 1.8em;
+    }
+
+    body .game .container .title a button {
+        font-size: 1em;
+    }
+
+    body .game .container {
+        width: 90%;
+        height: 90%;
+    }
+
+    body .game .container .mySlides img {
+        width: 100%;
+        height: 60%;
+    }
+
+    /* =============== */
+    /* Footer style */
+    /* =============== */
+
+    footer {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    footer .container {
+        padding: 1em;
+        padding-top: 3em;
+    }
+
+    footer .container .info {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    footer .container .info .ourself {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+
+        margin: auto;
+    }
+
+    footer .container .info .contact {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+
+        margin: auto;
+    }
+
+    footer .container .info .menu {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+
+        margin: auto;
+    }
+
+    footer .container .info .menu ul {
+        padding: 0;
+    }
+
+    footer .container .social {
+        padding-top: 20%;
+        padding-bottom: 5%;
+
+        flex-flow: column;
+    }
+
+    footer .container .social .networks {
+        width: 80%;
+    }
+
+    footer .container .social p {
+        width: 90%;
+
+        text-align: center;
+    }
+
+}

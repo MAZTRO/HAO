@@ -1,7 +1,6 @@
 import React from 'react';
 import GeneralBtn from './button';
 import InputFueld from './inputField';
-import Swal from 'sweetalert2';
 
 class FormInput extends React.Component {
     state = {
@@ -28,6 +27,8 @@ class FormInput extends React.Component {
         let email = emailVerification.test(val);
         let basicTextVerification = /^[A-Za-z\s]+$/;
         let simpleText = basicTextVerification.test(val);
+        let numberVerification = /^\d*$/;
+        let numberOk = numberVerification.test(val);
 
         if ((key === 'C.C.' || key === 'Telefono') && val.length < 7) {
             console.log(`Deleting: ${key}`);
@@ -42,7 +43,7 @@ class FormInput extends React.Component {
                     [key]: val
                 }
             });
-        } else if (key === 'C.C.' && val.length >= 7) {
+        } else if (key === 'C.C.' && val.length >= 7 && numberOk) {
             this.setState({
                 form: {
                     ...this.state.form,
@@ -56,7 +57,7 @@ class FormInput extends React.Component {
                     [key]: val
                 }
             });
-        } else if (key === 'Telefono' && val.length >= 10) {
+        } else if (key === 'Telefono' && val.length >= 10 && numberOk) {
             this.setState({
                 form: {
                     ...this.state.form,
