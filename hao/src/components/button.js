@@ -1,4 +1,5 @@
 import React from 'react';
+import Swal from 'sweetalert2';
 
 class GeneralBtn extends React.Component {
     constructor () {
@@ -7,6 +8,7 @@ class GeneralBtn extends React.Component {
     }
 
     handleSubmit = async ev => {
+        ev.preventDefault();
         let data = this.props.state.form;
 
         try {
@@ -32,8 +34,18 @@ class GeneralBtn extends React.Component {
             console.log('---------------');
         }
 
-        alert('Los datos se han enviado!\nLe llegara su boleta al correo.\nMuchas gracias por participar.');
-        window.location.href='https://hao-ten.vercel.app/';
+        Swal.fire({
+            title: `Datos enviados ${data['Nombres']}!`,
+            text: 'Revisa el correo, ahí esta la boleta.',
+            icon: 'success',
+            confirmButtonText: 'Listo!',
+            confirmButtonColor: '#1C8391',
+        }).then((result) => {
+            if (result.value) {
+                window.location.href='http://localhost:3000';
+                /* window.location.href='https://hao-ten.vercel.app/'; */
+            }
+        })
     }
 
     render() {

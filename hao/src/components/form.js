@@ -1,9 +1,9 @@
 import React from 'react';
 import GeneralBtn from './button';
 import InputFueld from './inputField';
+import Swal from 'sweetalert2';
 
 class FormInput extends React.Component {
-
     state = {
         form: {}
     }
