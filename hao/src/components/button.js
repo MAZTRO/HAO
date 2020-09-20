@@ -42,8 +42,8 @@ class GeneralBtn extends React.Component {
             confirmButtonColor: '#1C8391',
         }).then((result) => {
             if (result.value) {
-                window.location.href='http://localhost:3000';
-                /* window.location.href='https://hao-ten.vercel.app/'; */
+                /* window.location.href='http://localhost:3000'; */
+                window.location.href='https://hao-ten.vercel.app/';
             }
         })
     }

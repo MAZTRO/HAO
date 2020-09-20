@@ -1,6 +1,6 @@
 <h1 align="center">HAO - Hardware All in One</h1>
 
-Reto de crear una landing page con React sobre un evento de tecnologia.
+Challenge of creating a landing page with React about a technology event.
 <center><img src="./hao/public/images/Portrait.png"/><center>
 
 ## Author:
